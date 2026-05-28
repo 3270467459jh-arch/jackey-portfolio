@@ -1,13 +1,13 @@
 ---
-import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
 ---
 
 <aside>
-	<CallToAction href="mailto:3270467459jh@gmail.com">
-		联系我
-		<Icon icon="paper-plane-tilt" size="1.2em" />
-	</CallToAction>
+	<div class="contact-info">
+		<p>📧 3270467459jh@gmail.com</p>
+		<p>📱 15000663717（微信同号）</p>
+		<p><a href="https://github.com/3270467459jh-arch" target="_blank">🔗 GitHub</a></p>
+	</div>
 </aside>
 
 <style>
@@ -15,18 +15,40 @@ import Icon from './Icon.astro';
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 3rem;
+		gap: 1.5rem;
 		border-top: 1px solid var(--gray-800);
 		border-bottom: 1px solid var(--gray-800);
-		padding: 5rem 1.5rem;
+		padding: 3rem 1.5rem;
 		background-color: var(--gray-999_40);
 		box-shadow: var(--shadow-sm);
 	}
 
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		color: var(--gray-300);
+		font-size: var(--text-md);
+	}
+
+	.contact-info a {
+		color: var(--accent-regular);
+		text-decoration: none;
+	}
+
+	.contact-info a:hover {
+		text-decoration: underline;
+	}
+
 	@media (min-width: 50em) {
 		aside {
-			padding: 7.5rem;
-			justify-content: center;
+			padding: 5rem;
+		}
+
+		.contact-info {
+			flex-direction: row;
+			gap: 2rem;
 		}
 	}
 </style>
