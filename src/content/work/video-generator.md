@@ -15,7 +15,7 @@ tags:
 
 面向跨境电商TikTok运营场景，打造的一站式AI短视频生成工具。从产品信息输入到成片输出，全流程AI驱动。
 
-**GitHub:** [查看源码](https://github.com/3270467459jh-arch/tiktok-video-script-generator)
+**GitHub:** [查看源码](https://github.com/3270467459jh-arch/tiktok-video-script-generator) | **在线体验:** [打开Demo](https://tiktok-video-script-generator-kmorakgvqomwndikmgaada.streamlit.app/)
 
 ## 核心功能
 

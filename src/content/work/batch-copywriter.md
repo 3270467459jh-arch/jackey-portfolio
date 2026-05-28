@@ -15,7 +15,7 @@ tags:
 
 运营100+SKU的独立站时，每个产品都需要广告文案、邮件文案、产品描述，手动写根本忙不过来。这个工具实现了批量自动化生成。
 
-**GitHub:** [查看源码](https://github.com/3270467459jh-arch/tiktok-batch-copywriter)
+**GitHub:** [查看源码](https://github.com/3270467459jh-arch/tiktok-batch-copywriter) | **在线体验:** [打开Demo](https://tiktok-batch-copywriter-8bpqpr7hyh4xwdil7umecn.streamlit.app/)
 
 ## 核心功能
 
