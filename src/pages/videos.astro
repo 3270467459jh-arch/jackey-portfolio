@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="AIGC视频作品 | Jackey-江" description="使用即梦Seedance 2.0生成的电商带货视频作品集">
+	<div class="stack gap-20">
+		<main class="wrapper">
+			<Hero
+				title="AIGC视频作品"
+				tagline="使用即梦 Seedance 2.0 生成的电商带货视频，覆盖产品展示、使用演示、场景化等多种风格。"
+			/>
+
+			<div class="video-intro">
+				<p>以下视频均由AI生成，用于TikTok/独立站投放素材测试。通过精心设计的提示词模板，实现批量产出多风格电商视频，月产60+条。</p>
+			</div>
+
+			<div class="video-grid">
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+				<div class="video-item">
+					<div class="video-placeholder">
+						<p>视频上传后嵌入</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.video-intro {
+		max-width: 65ch;
+		margin: 0 auto;
+		text-align: center;
+		font-size: var(--text-md);
+		color: var(--gray-300);
+		margin-bottom: 2rem;
+	}
+
+	.video-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.video-item {
+		border-radius: 0.75rem;
+		overflow: hidden;
+		box-shadow: var(--shadow-md);
+		background: var(--gray-800);
+	}
+
+	.video-placeholder {
+		aspect-ratio: 16 / 9;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--gray-400);
+		font-size: var(--text-sm);
+		border: 2px dashed var(--gray-700);
+		border-radius: 0.75rem;
+	}
+
+	@media (min-width: 50em) {
+		.video-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 72em) {
+		.video-grid {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+</style>
