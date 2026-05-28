@@ -1,0 +1,94 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>AI 工具与开发</h2>
+		<ul class="skill-list">
+			<li>使用 Claude Code / Cursor 搭建自动化程序</li>
+			<li>Dify / 扣子（Coze）低代码工作流搭建</li>
+			<li>Python + API 调用，批量内容生成脚本</li>
+			<li>AI Agent 流程设计与调试</li>
+			<li>即梦 / 可灵 / NanoBanana / GPT Image 生图与生视频</li>
+			<li>ChatGPT / Claude 提示词工程与优化</li>
+		</ul>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>跨境电商运营</h2>
+		<ul class="skill-list">
+			<li>独立站全链路运营（选品→建站→投放→转化）</li>
+			<li>TikTok 全流程运营（内容策划→发布→带货）</li>
+			<li>Facebook / Google 广告投放与优化</li>
+			<li>Amazon Listing 优化与多站点本地化</li>
+			<li>社媒内容矩阵搭建（TikTok/Instagram/YouTube）</li>
+			<li>数据分析与选品决策</li>
+		</ul>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="code" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>前沿部署能力（FDE）</h2>
+		<ul class="skill-list">
+			<li>快速理解业务需求，用AI工具48h内交付MVP</li>
+			<li>AIGC落地：从提示词设计到生产环境部署</li>
+			<li>运营流程诊断，识别可自动化环节并落地</li>
+			<li>跨团队协作，将技术方案翻译为业务语言</li>
+			<li>持续跟进AI新工具/新特性，快速验证业务价值</li>
+			<li>独立推进项目，从规划到落地全流程闭环</li>
+		</ul>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skill-list {
+		color: var(--gray-400);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.skill-list li::before {
+		content: "→ ";
+		color: var(--accent-regular);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

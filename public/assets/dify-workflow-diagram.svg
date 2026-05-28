@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#1a202c"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="url(#bg)" rx="16"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#e2e8f0" font-size="20" font-weight="bold">跨境电商多语言Listing一键生成工作流</text>
+  <text x="500" y="62" text-anchor="middle" fill="#a0aec0" font-size="12">Powered by Dify + Claude API</text>
+
+  <!-- Node 1: Input -->
+  <rect x="30" y="120" width="180" height="160" rx="12" fill="url(#nodeGrad)" stroke="#667eea" stroke-width="2"/>
+  <rect x="30" y="120" width="180" height="32" rx="12" fill="url(#accentGrad)"/>
+  <text x="120" y="141" text-anchor="middle" fill="white" font-size="12" font-weight="bold">📝 输入产品信息</text>
+  <text x="50" y="172" fill="#cbd5e0" font-size="11">产品名称</text>
+  <text x="50" y="192" fill="#cbd5e0" font-size="11">产品品类</text>
+  <text x="50" y="212" fill="#cbd5e0" font-size="11">核心卖点（3-5个）</text>
+  <text x="50" y="232" fill="#cbd5e0" font-size="11">目标平台</text>
+  <text x="50" y="252" fill="#cbd5e0" font-size="11">价格区间</text>
+
+  <!-- Arrow 1 -->
+  <line x1="210" y1="200" x2="260" y2="200" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <polygon points="258,195 270,200 258,205" fill="#667eea"/>
+
+  <!-- Node 2: Keywords -->
+  <rect x="270" y="150" width="160" height="100" rx="12" fill="url(#nodeGrad)" stroke="#48bb78" stroke-width="2"/>
+  <rect x="270" y="150" width="160" height="32" rx="12" fill="#48bb78"/>
+  <text x="350" y="171" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🔍 关键词研究</text>
+  <text x="290" y="200" fill="#cbd5e0" font-size="10">• 各市场搜索热词</text>
+  <text x="290" y="218" fill="#cbd5e0" font-size="10">• 长尾关键词挖掘</text>
+  <text x="290" y="236" fill="#cbd5e0" font-size="10">• 竞品关键词分析</text>
+
+  <!-- Arrow 2 -->
+  <line x1="430" y1="200" x2="480" y2="200" stroke="#48bb78" stroke-width="2"/>
+  <polygon points="478,195 490,200 478,205" fill="#48bb78"/>
+
+  <!-- Node 3: English -->
+  <rect x="490" y="150" width="160" height="100" rx="12" fill="url(#nodeGrad)" stroke="#ed8936" stroke-width="2"/>
+  <rect x="490" y="150" width="160" height="32" rx="12" fill="#ed8936"/>
+  <text x="570" y="171" text-anchor="middle" fill="white" font-size="12" font-weight="bold">🇺🇸 英文Listing</text>
+  <text x="510" y="200" fill="#cbd5e0" font-size="10">• Title + SEO优化</text>
+  <text x="510" y="218" fill="#cbd5e0" font-size="10">• 5 Bullet Points</text>
+  <text x="510" y="236" fill="#cbd5e0" font-size="10">• Description + Terms</text>
+
+  <!-- Arrows to 5 languages -->
+  <!-- JP -->
+  <path d="M 650 175 Q 680 120 720 110" stroke="#ed64a6" stroke-width="1.5" fill="none"/>
+  <polygon points="718,105 730,110 718,115" fill="#ed64a6"/>
+  <!-- DE -->
+  <path d="M 650 185 Q 680 165 720 165" stroke="#ed64a6" stroke-width="1.5" fill="none"/>
+  <polygon points="718,160 730,165 718,170" fill="#ed64a6"/>
+  <!-- FR -->
+  <path d="M 650 200 Q 680 220 720 220" stroke="#ed64a6" stroke-width="1.5" fill="none"/>
+  <polygon points="718,215 730,220 718,225" fill="#ed64a6"/>
+  <!-- ES -->
+  <path d="M 650 215 Q 680 275 720 275" stroke="#ed64a6" stroke-width="1.5" fill="none"/>
+  <polygon points="718,270 730,275 718,280" fill="#ed64a6"/>
+
+  <!-- Node: Japanese -->
+  <rect x="730" y="80" width="140" height="55" rx="10" fill="url(#nodeGrad)" stroke="#ed64a6" stroke-width="1.5"/>
+  <text x="800" y="102" text-anchor="middle" fill="#ed64a6" font-size="11" font-weight="bold">🇯🇵 日语Listing</text>
+  <text x="800" y="122" text-anchor="middle" fill="#a0aec0" font-size="9">品質・安心感・ギフト性</text>
+
+  <!-- Node: German -->
+  <rect x="730" y="145" width="140" height="55" rx="10" fill="url(#nodeGrad)" stroke="#ed64a6" stroke-width="1.5"/>
+  <text x="800" y="167" text-anchor="middle" fill="#ed64a6" font-size="11" font-weight="bold">🇩🇪 德语Listing</text>
+  <text x="800" y="187" text-anchor="middle" fill="#a0aec0" font-size="9">技术参数・认证・环保</text>
+
+  <!-- Node: French -->
+  <rect x="730" y="210" width="140" height="55" rx="10" fill="url(#nodeGrad)" stroke="#ed64a6" stroke-width="1.5"/>
+  <text x="800" y="232" text-anchor="middle" fill="#ed64a6" font-size="11" font-weight="bold">🇫🇷 法语Listing</text>
+  <text x="800" y="252" text-anchor="middle" fill="#a0aec0" font-size="9">设计感・生活方式・品牌</text>
+
+  <!-- Node: Spanish -->
+  <rect x="730" y="275" width="140" height="55" rx="10" fill="url(#nodeGrad)" stroke="#ed64a6" stroke-width="1.5"/>
+  <text x="800" y="297" text-anchor="middle" fill="#ed64a6" font-size="11" font-weight="bold">🇪🇸 西班牙语Listing</text>
+  <text x="800" y="317" text-anchor="middle" fill="#a0aec0" font-size="9">性价比・实用・家庭</text>
+
+  <!-- Output section -->
+  <rect x="270" y="380" width="620" height="190" rx="12" fill="url(#nodeGrad)" stroke="#667eea" stroke-width="2" opacity="0.9"/>
+  <rect x="270" y="380" width="620" height="32" rx="12" fill="url(#accentGrad)"/>
+  <text x="580" y="401" text-anchor="middle" fill="white" font-size="13" font-weight="bold">📦 输出示例（以蓝牙耳机为例）</text>
+
+  <!-- Output content -->
+  <text x="295" y="430" fill="#667eea" font-size="11" font-weight="bold">🇺🇸 English:</text>
+  <text x="295" y="448" fill="#cbd5e0" font-size="10">Title: "ProBuds X1 Wireless Earbuds - 45dB ANC, 36H Battery, IPX5..."</text>
+
+  <text x="295" y="472" fill="#ed64a6" font-size="11" font-weight="bold">🇯🇵 日本語:</text>
+  <text x="295" y="490" fill="#cbd5e0" font-size="10">Title: 「ProBuds X1」ワイヤレスイヤホン ノイズキャンセリング45dB 36時間再生...</text>
+
+  <text x="295" y="514" fill="#48bb78" font-size="11" font-weight="bold">🇩🇪 Deutsch:</text>
+  <text x="295" y="532" fill="#cbd5e0" font-size="10">Title: "ProBuds X1 Kabellose Ohrhörer - 45dB Geräuschunterdrückung, CE-zertifiziert..."</text>
+
+  <text x="295" y="556" fill="#ed8936" font-size="11" font-weight="bold">🇫🇷/🇪🇸 + 完整Bullet Points + Search Terms...</text>
+
+  <!-- Arrows from languages to output -->
+  <path d="M 800 335 Q 800 360 580 380" stroke="#667eea" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+
+  <!-- Stats bar -->
+  <rect x="30" y="540" width="940" height="40" rx="8" fill="#2d3748" opacity="0.8"/>
+  <text x="120" y="565" text-anchor="middle" fill="#48bb78" font-size="12">⏱ 2分钟完成</text>
+  <text x="330" y="565" text-anchor="middle" fill="#667eea" font-size="12">📊 5种语言同时输出</text>
+  <text x="560" y="565" text-anchor="middle" fill="#ed8936" font-size="12">🎯 SEO关键词自动优化</text>
+  <text x="790" y="565" text-anchor="middle" fill="#ed64a6" font-size="12">🔄 非翻译，本地化重写</text>
+</svg>

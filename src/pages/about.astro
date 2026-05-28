@@ -1,0 +1,108 @@
+---
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About | Jackey-江" description="跨境电商AI运营，Vibe Coding实践者">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="关于我"
+				tagline="跨境电商运营出身，用AI重新定义工作流。"
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Jackey-江的工作照"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">个人背景</h2>
+				<div class="content">
+					<p>
+						跨境电商独立站运营经验丰厚，从选品、Listing优化到广告投放全链路操盘，单月月销40w+。
+						擅长将AI工具融入日常运营流程，用提示词工程和自动化工作流替代重复劳动。
+					</p>
+					<p>
+						熟练使用即梦、NanoBanana、GPT Image等AIGC工具进行视频和图片创作，
+						有完整的AI视频制作作品集。同时具备基础Python开发能力，能独立搭建
+						AI自动化工具和Dify工作流。
+					</p>
+					<p>
+						信奉Vibe Coding理念——用AI编程工具快速实现想法，让运营人也能做开发。
+						目标是成为业务与AI之间的桥梁，用技术手段解决实际运营问题。
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">技能</h2>
+				<div class="content">
+					<p>提示词工程（文案/图片/视频） · AI视频制作（即梦/可灵/剪映） · 跨境电商运营（独立站/TikTok/Facebook广告） · AI工具开发（Python/API调用/Claude Code/Coze） · 工作流搭建（Dify/扣子） · 数据分析与选品</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

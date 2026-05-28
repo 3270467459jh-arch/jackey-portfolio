@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38b2ac"/>
+      <stop offset="100%" style="stop-color:#4fd1c5"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ed8936"/>
+      <stop offset="100%" style="stop-color:#f6ad55"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9f7aea"/>
+      <stop offset="100%" style="stop-color:#b794f4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="url(#bg3)" rx="16"/>
+
+  <!-- Title -->
+  <text x="500" y="45" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="bold">📋 跨境电商 AIGC 提示词模板库</text>
+  <text x="500" y="72" text-anchor="middle" fill="#a0aec0" font-size="13">覆盖短视频脚本 · 广告文案 · 产品图生成 三大核心场景</text>
+
+  <!-- Category 1: Short Video -->
+  <rect x="30" y="100" width="300" height="470" rx="12" fill="url(#cardGrad3)" stroke="#38b2ac" stroke-width="1.5"/>
+  <rect x="30" y="100" width="300" height="36" rx="12" fill="url(#greenGrad)"/>
+  <text x="180" y="123" text-anchor="middle" fill="white" font-size="13" font-weight="bold">🎬 短视频脚本模板</text>
+
+  <!-- Video template items -->
+  <rect x="50" y="152" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="65" y="172" fill="#4fd1c5" font-size="11" font-weight="bold">产品展示类</text>
+  <text x="65" y="192" fill="#a0aec0" font-size="10">痛点切入 · Before/After · 快速展示</text>
+
+  <rect x="50" y="212" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="65" y="232" fill="#4fd1c5" font-size="11" font-weight="bold">开箱测评类</text>
+  <text x="65" y="252" fill="#a0aec0" font-size="10">悬念开箱 · 对比开箱 · ASMR风格</text>
+
+  <rect x="50" y="272" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="65" y="292" fill="#4fd1c5" font-size="11" font-weight="bold">产品对比类</text>
+  <text x="65" y="312" fill="#a0aec0" font-size="10">价格PK · 功能横评 · 新旧对比</text>
+
+  <rect x="50" y="332" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="65" y="352" fill="#4fd1c5" font-size="11" font-weight="bold">热门Hook公式</text>
+  <text x="65" y="372" fill="#a0aec0" font-size="10">好奇心 · 痛点 · 数据 · FOMO · 社交证明</text>
+
+  <!-- Prompt preview -->
+  <rect x="50" y="400" width="260" height="80" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="62" y="420" fill="#a0aec0" font-size="9">模板示例：</text>
+  <text x="62" y="438" fill="#68d391" font-size="9">你是TikTok爆款视频脚本创作者...</text>
+  <text x="62" y="453" fill="#68d391" font-size="9">请为{{产品名称}}创作一个{{时长}}的</text>
+  <text x="62" y="468" fill="#68d391" font-size="9">短视频脚本，使用痛点切入型结构...</text>
+
+  <rect x="50" y="492" width="80" height="22" rx="4" fill="#38b2ac" opacity="0.2"/>
+  <text x="90" y="507" text-anchor="middle" fill="#4fd1c5" font-size="9" font-weight="bold">4 类模板</text>
+  <rect x="140" y="492" width="90" height="22" rx="4" fill="#38b2ac" opacity="0.2"/>
+  <text x="185" y="507" text-anchor="middle" fill="#4fd1c5" font-size="9" font-weight="bold">15+ 公式</text>
+  <rect x="240" y="492" width="70" height="22" rx="4" fill="#38b2ac" opacity="0.2"/>
+  <text x="275" y="507" text-anchor="middle" fill="#4fd1c5" font-size="9" font-weight="bold">TikTok</text>
+
+  <!-- Category 2: Product Images -->
+  <rect x="350" y="100" width="300" height="470" rx="12" fill="url(#cardGrad3)" stroke="#ed8936" stroke-width="1.5"/>
+  <rect x="350" y="100" width="300" height="36" rx="12" fill="url(#orangeGrad)"/>
+  <text x="500" y="123" text-anchor="middle" fill="white" font-size="13" font-weight="bold">🖼️ 电商产品图模板</text>
+
+  <!-- Image template items -->
+  <rect x="370" y="152" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="385" y="172" fill="#f6ad55" font-size="11" font-weight="bold">白底主图 / Hero Image</text>
+  <text x="385" y="192" fill="#a0aec0" font-size="10">标准电商主图 · 纯色背景 · 多风格变体</text>
+
+  <rect x="370" y="212" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="385" y="232" fill="#f6ad55" font-size="11" font-weight="bold">场景图 / Lifestyle</text>
+  <text x="385" y="252" fill="#a0aec0" font-size="10">使用场景 · 生活方式 · 环境融入</text>
+
+  <rect x="370" y="272" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="385" y="292" fill="#f6ad55" font-size="11" font-weight="bold">详情页信息图 / A+</text>
+  <text x="385" y="312" fill="#a0aec0" font-size="10">卖点图标 · 对比图 · 步骤说明</text>
+
+  <rect x="370" y="332" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="385" y="352" fill="#f6ad55" font-size="11" font-weight="bold">社媒图 / UGC / 广告素材</text>
+  <text x="385" y="372" fill="#a0aec0" font-size="10">小红书 · Instagram · TikTok · Banner</text>
+
+  <!-- Image prompt preview -->
+  <rect x="370" y="400" width="260" height="80" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="382" y="420" fill="#a0aec0" font-size="9">GPT-Image-2 铁律：</text>
+  <text x="382" y="438" fill="#fbd38d" font-size="9">✓ 颜色用HEX码：#FFFFFF</text>
+  <text x="382" y="453" fill="#fbd38d" font-size="9">✓ 产品占比数字化：35-40%</text>
+  <text x="382" y="468" fill="#fbd38d" font-size="9">✓ 显式声明留白：≥45%</text>
+
+  <rect x="370" y="492" width="90" height="22" rx="4" fill="#ed8936" opacity="0.2"/>
+  <text x="415" y="507" text-anchor="middle" fill="#f6ad55" font-size="9" font-weight="bold">25 场景</text>
+  <rect x="470" y="492" width="80" height="22" rx="4" fill="#ed8936" opacity="0.2"/>
+  <text x="510" y="507" text-anchor="middle" fill="#f6ad55" font-size="9" font-weight="bold">4 风格</text>
+  <rect x="560" y="492" width="70" height="22" rx="4" fill="#ed8936" opacity="0.2"/>
+  <text x="595" y="507" text-anchor="middle" fill="#f6ad55" font-size="9" font-weight="bold">6 品类</text>
+
+  <!-- Category 3: Ad Copy -->
+  <rect x="670" y="100" width="300" height="470" rx="12" fill="url(#cardGrad3)" stroke="#9f7aea" stroke-width="1.5"/>
+  <rect x="670" y="100" width="300" height="36" rx="12" fill="url(#purpleGrad)"/>
+  <text x="820" y="123" text-anchor="middle" fill="white" font-size="13" font-weight="bold">✍️ 广告文案模板</text>
+
+  <!-- Copy template items -->
+  <rect x="690" y="152" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="705" y="172" fill="#b794f4" font-size="11" font-weight="bold">Facebook 广告</text>
+  <text x="705" y="192" fill="#a0aec0" font-size="10">单品推广 · 批量变体 · 再营销 · 节日大促</text>
+
+  <rect x="690" y="212" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="705" y="232" fill="#b794f4" font-size="11" font-weight="bold">Google 广告</text>
+  <text x="705" y="252" fill="#a0aec0" font-size="10">RSA搜索广告 · 购物广告 · 展示广告</text>
+
+  <rect x="690" y="272" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="705" y="292" fill="#b794f4" font-size="11" font-weight="bold">产品 Listing</text>
+  <text x="705" y="312" fill="#a0aec0" font-size="10">Amazon全套 · 多站点本地化 · 独立站</text>
+
+  <rect x="690" y="332" width="260" height="50" rx="8" fill="#1a202c"/>
+  <text x="705" y="352" fill="#b794f4" font-size="11" font-weight="bold">邮件营销</text>
+  <text x="705" y="372" fill="#a0aec0" font-size="10">欢迎序列 · 弃购挽回 · 促销 · 复购</text>
+
+  <!-- Copy preview -->
+  <rect x="690" y="400" width="260" height="80" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="702" y="420" fill="#a0aec0" font-size="9">A/B测试变体生成：</text>
+  <text x="702" y="438" fill="#d6bcfa" font-size="9">版本A — 痛点导向：Primary Text + CTA</text>
+  <text x="702" y="453" fill="#d6bcfa" font-size="9">版本B — 利益导向：Primary Text + CTA</text>
+  <text x="702" y="468" fill="#d6bcfa" font-size="9">版本C — 社交证明：Primary Text + CTA</text>
+
+  <rect x="690" y="492" width="100" height="22" rx="4" fill="#9f7aea" opacity="0.2"/>
+  <text x="740" y="507" text-anchor="middle" fill="#b794f4" font-size="9" font-weight="bold">4 平台</text>
+  <rect x="800" y="492" width="80" height="22" rx="4" fill="#9f7aea" opacity="0.2"/>
+  <text x="840" y="507" text-anchor="middle" fill="#b794f4" font-size="9" font-weight="bold">批量生成</text>
+  <rect x="890" y="492" width="60" height="22" rx="4" fill="#9f7aea" opacity="0.2"/>
+  <text x="920" y="507" text-anchor="middle" fill="#b794f4" font-size="9" font-weight="bold">A/B测试</text>
+</svg>

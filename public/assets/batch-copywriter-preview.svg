@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'Segoe UI', sans-serif">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0533"/>
+      <stop offset="50%" style="stop-color:#2d1b69"/>
+      <stop offset="100%" style="stop-color:#11001c"/>
+    </linearGradient>
+    <linearGradient id="cardGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="tiktokGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#69c9d0"/>
+      <stop offset="100%" style="stop-color:#ee1d52"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="url(#bg4)" rx="16"/>
+
+  <!-- Decorative -->
+  <circle cx="900" cy="80" r="100" fill="#ee1d52" opacity="0.06"/>
+  <circle cx="80" cy="520" r="80" fill="#69c9d0" opacity="0.06"/>
+
+  <!-- Title -->
+  <text x="500" y="45" text-anchor="middle" fill="#e2e8f0" font-size="22" font-weight="bold">✍️ 电商文案批量生成器</text>
+  <text x="500" y="72" text-anchor="middle" fill="#a0aec0" font-size="13">上传产品CSV → 选择平台 → 批量生成TikTok/社媒文案 → 下载Excel</text>
+
+  <!-- Left: CSV Upload mockup -->
+  <rect x="30" y="95" width="280" height="220" rx="12" fill="url(#cardGrad4)" stroke="#4a5568" stroke-width="1"/>
+  <rect x="30" y="95" width="280" height="32" rx="12" fill="#4a5568"/>
+  <text x="170" y="116" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="bold">📁 产品数据（3个SKU）</text>
+
+  <!-- Table header -->
+  <rect x="45" y="138" width="250" height="20" rx="3" fill="#1a202c"/>
+  <text x="55" y="152" fill="#69c9d0" font-size="9" font-weight="bold">product_name</text>
+  <text x="155" y="152" fill="#69c9d0" font-size="9" font-weight="bold">selling_points</text>
+  <text x="260" y="152" fill="#69c9d0" font-size="9" font-weight="bold">price</text>
+
+  <!-- Table rows -->
+  <text x="55" y="175" fill="#e2e8f0" font-size="9">蓝牙耳机</text>
+  <text x="155" y="175" fill="#a0aec0" font-size="9">降噪45dB, 36h</text>
+  <text x="260" y="175" fill="#a0aec0" font-size="9">$49</text>
+
+  <line x1="45" y1="182" x2="295" y2="182" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="55" y="198" fill="#e2e8f0" font-size="9">便携榨汁机</text>
+  <text x="155" y="198" fill="#a0aec0" font-size="9">30秒鲜榨, USB-C</text>
+  <text x="260" y="198" fill="#a0aec0" font-size="9">$29</text>
+
+  <line x1="45" y1="205" x2="295" y2="205" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="55" y="221" fill="#e2e8f0" font-size="9">瑜伽垫</text>
+  <text x="155" y="221" fill="#a0aec0" font-size="9">6mm加厚, 防滑</text>
+  <text x="260" y="221" fill="#a0aec0" font-size="9">$35</text>
+
+  <!-- Settings -->
+  <rect x="45" y="240" width="115" height="22" rx="4" fill="#ee1d52" opacity="0.2" stroke="#ee1d52" stroke-width="0.5"/>
+  <text x="102" y="255" text-anchor="middle" fill="#ee1d52" font-size="9">TikTok文案 ✓</text>
+  <rect x="168" y="240" width="115" height="22" rx="4" fill="#69c9d0" opacity="0.2" stroke="#69c9d0" stroke-width="0.5"/>
+  <text x="225" y="255" text-anchor="middle" fill="#69c9d0" font-size="9">Spark Ads ✓</text>
+
+  <rect x="45" y="272" width="250" height="28" rx="6" fill="url(#tiktokGrad)"/>
+  <text x="170" y="291" text-anchor="middle" fill="white" font-size="11" font-weight="bold">🚀 批量生成（3产品 × 2类型）</text>
+
+  <!-- Arrow -->
+  <path d="M 320 200 Q 350 200 360 200" stroke="#69c9d0" stroke-width="2" fill="none"/>
+  <polygon points="358,195 370,200 358,205" fill="#69c9d0"/>
+
+  <!-- Right: Generated results -->
+  <rect x="380" y="95" width="590" height="480" rx="12" fill="url(#cardGrad4)" stroke="#ee1d52" stroke-width="1"/>
+  <rect x="380" y="95" width="590" height="32" rx="12" fill="url(#tiktokGrad)"/>
+  <text x="675" y="116" text-anchor="middle" fill="white" font-size="12" font-weight="bold">📋 批量生成结果 — TikTok视频标题+配文</text>
+
+  <!-- Product 1 -->
+  <rect x="400" y="140" width="550" height="130" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="415" y="160" fill="#ee1d52" font-size="11" font-weight="bold">🎧 蓝牙耳机 — 变体A（好奇心型）</text>
+
+  <text x="415" y="182" fill="#a0aec0" font-size="10">标题：</text>
+  <text x="450" y="182" fill="#e2e8f0" font-size="10">"I tested $500 AirPods vs these $49 earbuds and..."</text>
+
+  <text x="415" y="202" fill="#a0aec0" font-size="10">配文：</text>
+  <text x="450" y="202" fill="#e2e8f0" font-size="10">The noise cancelling on these is INSANE 🤯 45dB ANC for under $50??</text>
+
+  <text x="415" y="222" fill="#a0aec0" font-size="10">标签：</text>
+  <text x="450" y="222" fill="#69c9d0" font-size="10">#TikTokMadeMeBuyIt #earbuds #noisecancelling #techfinds #budgettech</text>
+
+  <text x="415" y="245" fill="#a0aec0" font-size="10">CTA：</text>
+  <text x="450" y="245" fill="#fbd38d" font-size="10">"Comment LINK and I'll DM you 🔗"</text>
+
+  <!-- Product 1 variant B -->
+  <rect x="400" y="280" width="550" height="110" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="415" y="300" fill="#ee1d52" font-size="11" font-weight="bold">🎧 蓝牙耳机 — 变体B（痛点型）</text>
+
+  <text x="415" y="322" fill="#a0aec0" font-size="10">标题：</text>
+  <text x="450" y="322" fill="#e2e8f0" font-size="10">"POV: your coworker won't stop talking and you need THESE"</text>
+
+  <text x="415" y="342" fill="#a0aec0" font-size="10">配文：</text>
+  <text x="450" y="342" fill="#e2e8f0" font-size="10">Open office survival kit 😅 36 hours of peace and quiet for $49</text>
+
+  <text x="415" y="362" fill="#a0aec0" font-size="10">标签：</text>
+  <text x="450" y="362" fill="#69c9d0" font-size="10">#officelife #workfromhome #noisecancel #lifehack #amazonfinds</text>
+
+  <!-- Product 2 -->
+  <rect x="400" y="400" width="550" height="110" rx="8" fill="#1a202c" stroke="#4a5568" stroke-width="0.5"/>
+  <text x="415" y="420" fill="#ee1d52" font-size="11" font-weight="bold">🧃 便携榨汁机 — 变体A（好奇心型）</text>
+
+  <text x="415" y="442" fill="#a0aec0" font-size="10">标题：</text>
+  <text x="450" y="442" fill="#e2e8f0" font-size="10">"Making a smoothie on the subway... yes really 🚇"</text>
+
+  <text x="415" y="462" fill="#a0aec0" font-size="10">配文：</text>
+  <text x="450" y="462" fill="#e2e8f0" font-size="10">30 seconds from whole fruit to smoothie anywhere 🍓 USB-C charged</text>
+
+  <text x="415" y="482" fill="#a0aec0" font-size="10">标签：</text>
+  <text x="450" y="482" fill="#69c9d0" font-size="10">#portableblender #smoothie #kitchengadgets #healthylifestyle #fyp</text>
+
+  <!-- Download button -->
+  <rect x="400" y="525" width="550" height="35" rx="6" fill="#2d3748" stroke="#69c9d0" stroke-width="1"/>
+  <text x="675" y="547" text-anchor="middle" fill="#69c9d0" font-size="12" font-weight="bold">📥 下载全部结果（Excel · 按平台分Sheet）</text>
+
+  <!-- Stats -->
+  <rect x="30" y="340" width="280" height="235" rx="12" fill="url(#cardGrad4)" stroke="#4a5568" stroke-width="1"/>
+  <text x="170" y="370" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="bold">⚡ 生成统计</text>
+
+  <text x="55" y="400" fill="#a0aec0" font-size="11">产品数量</text>
+  <text x="270" y="400" fill="#e2e8f0" font-size="11" text-anchor="end">3 个</text>
+  <line x1="55" y1="410" x2="280" y2="410" stroke="#4a5568" stroke-width="0.5"/>
+
+  <text x="55" y="432" fill="#a0aec0" font-size="11">文案类型</text>
+  <text x="270" y="432" fill="#e2e8f0" font-size="11" text-anchor="end">2 种</text>
+  <line x1="55" y1="442" x2="280" y2="442" stroke="#4a5568" stroke-width="0.5"/>
+
+  <text x="55" y="464" fill="#a0aec0" font-size="11">每产品变体</text>
+  <text x="270" y="464" fill="#e2e8f0" font-size="11" text-anchor="end">3 个</text>
+  <line x1="55" y1="474" x2="280" y2="474" stroke="#4a5568" stroke-width="0.5"/>
+
+  <text x="55" y="496" fill="#a0aec0" font-size="11">总输出文案</text>
+  <text x="270" y="496" fill="#69c9d0" font-size="14" text-anchor="end" font-weight="bold">18 条</text>
+  <line x1="55" y1="506" x2="280" y2="506" stroke="#4a5568" stroke-width="0.5"/>
+
+  <text x="55" y="528" fill="#a0aec0" font-size="11">耗时</text>
+  <text x="270" y="528" fill="#48bb78" font-size="14" text-anchor="end" font-weight="bold">~2 分钟</text>
+  <line x1="55" y1="538" x2="280" y2="538" stroke="#4a5568" stroke-width="0.5"/>
+
+  <text x="55" y="558" fill="#a0aec0" font-size="11">人工等效时间</text>
+  <text x="270" y="558" fill="#ee1d52" font-size="11" text-anchor="end" font-weight="bold">约 6 小时</text>
+</svg>
