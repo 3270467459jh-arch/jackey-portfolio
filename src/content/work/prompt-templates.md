@@ -15,6 +15,8 @@ tags:
 
 基于9个月跨境电商独立站运营实战经验沉淀，整理了一套系统化的AIGC提示词模板库，帮助运营团队快速生成高质量内容。
 
+**GitHub:** [查看源码](https://github.com/3270467459jh-arch/ecommerce-aigc-prompt-templates)
+
 ## 覆盖场景
 
 ### 短视频脚本（TikTok/Reels）

@@ -15,6 +15,8 @@ tags:
 
 跨境电商多站点运营最头疼的问题之一：同一产品要写5个语言版本的Listing。这个工作流让这件事从2小时缩短到2分钟。
 
+**GitHub:** [查看源码](https://github.com/3270467459jh-arch/dify-multilingual-listing-workflow)
+
 ## 工作流设计
 
 ### 输入节点
