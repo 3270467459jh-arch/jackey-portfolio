@@ -17,61 +17,16 @@ import Hero from '../components/Hero.astro';
 			</div>
 
 			<div class="video-grid">
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
+				{Array.from({ length: 11 }, (_, i) => i + 1).map((page) => (
+					<div class="video-item">
+						<iframe
+							src={`//player.bilibili.com/player.html?bvid=BV1KgVs6SEvM&page=${page}&high_quality=1&danmaku=0`}
+							allowfullscreen
+							frameborder="0"
+							scrolling="no"
+						></iframe>
 					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
-				<div class="video-item">
-					<div class="video-placeholder">
-						<p>视频上传后嵌入</p>
-					</div>
-				</div>
+				))}
 			</div>
 		</main>
 
@@ -100,17 +55,13 @@ import Hero from '../components/Hero.astro';
 		overflow: hidden;
 		box-shadow: var(--shadow-md);
 		background: var(--gray-800);
+		aspect-ratio: 16 / 9;
 	}
 
-	.video-placeholder {
-		aspect-ratio: 16 / 9;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: var(--gray-400);
-		font-size: var(--text-sm);
-		border: 2px dashed var(--gray-700);
-		border-radius: 0.75rem;
+	.video-item iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
 	}
 
 	@media (min-width: 50em) {
